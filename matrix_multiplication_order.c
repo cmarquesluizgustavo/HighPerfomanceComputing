@@ -26,12 +26,6 @@ double *randomVector(int N) {
     return vector;
 }
 
-void free_matrix(double **matrix, int matrix_size){
-  for (int i = 0; i <= matrix_size; i++) free(matrix[i]);
-
-  free(matrix);
-}
-
 
 double *emptyVector(int N) {
     double *vector = (double *)malloc(N * sizeof(double));
